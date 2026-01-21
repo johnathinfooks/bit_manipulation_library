@@ -1,3 +1,5 @@
+#include "bitman.h"
+
 void binary_add(int* in_b, int size_in_b, int* out_b, int size_out_b, int* add_bin)
 {
     for (int i = size_in_b - 1; i > 0; i--)
@@ -14,3 +16,6 @@ void binary_add(int* in_b, int size_in_b, int* out_b, int size_out_b, int* add_b
         }
     }
 }
+
+// WARN: incomplete
+void binary_subtract();

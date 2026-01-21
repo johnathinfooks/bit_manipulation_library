@@ -1,3 +1,6 @@
+#include "bitman.h"
+
+// TODO: review decimal_binary();
 void decimal_binary(int* output_buff, int output_buff_size, int input)
 {
     int rem;
@@ -10,17 +13,17 @@ void decimal_binary(int* output_buff, int output_buff_size, int input)
     }
 }
 
-// binary to integer translation
 void binary_decimal(int* output_buff, int* input_buff, int input_buff_size)
 {
     // translations and stuff
 }
 
-// binary to hexadecimal translation
 void binary_hexadecimal(int* output_buff, int output_buff_size, int* input_buff, int input_buff_size)
 {
-    // Look at the buffer.
-    // step through the first 4 digits of the buffer array
-    // evaluate the numerical value of those 4 digits between 0 and 15 (base 16)
-    // assign a hexadecimal "bit" value depending on
+    for (int i = output_buff_size - 1; i > 0; i--)
+    {
+        for (int j = input_buff_size - 1; j > input_buff_size - 5; j--) {
+
+        }
+    }
 }
