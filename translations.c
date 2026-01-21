@@ -1,5 +1,4 @@
-// integer to binary translation
-void integer_binary(int* output_buff, int output_buff_size, int input)
+void decimal_binary(int* output_buff, int output_buff_size, int input)
 {
     int rem;
 
@@ -12,7 +11,7 @@ void integer_binary(int* output_buff, int output_buff_size, int input)
 }
 
 // binary to integer translation
-void binary_integer(int* output_buff, int* input_buff, int input_buff_size)
+void binary_decimal(int* output_buff, int* input_buff, int input_buff_size)
 {
     // translations and stuff
 }

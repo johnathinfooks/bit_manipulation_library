@@ -13,6 +13,7 @@ void shift_r (int* in_buff, int size_in_buff, int* out_buff, int size_out_buff, 
 {
 }
 
+// INFO: test case
 #include <stdio.h>
 int main()
 {

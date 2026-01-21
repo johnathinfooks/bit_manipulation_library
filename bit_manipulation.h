@@ -1,8 +1,15 @@
 #ifndef BIT_MANIPULATION_H
 #define BIT_MANIPULATION_H
 
-// TODO: documentation
-void integer_binary(int* buff, int buff_size, int int_to_bin);
+
+
+/**
+ * @brief Translates unsigned decimal to binary.
+ * @param out_b Output array of binary digits.
+ * @param size_out_b Length of output array.
+ * @param dec Decimal number being translated to binary.
+ */
+void decimal_binary(int* out_b, int size_out_b, int dec);
 
 // WARN: incomplete
 void binary_hexadecimal();
@@ -11,15 +18,24 @@ void binary_hexadecimal();
 void hexadecimal_binary();
 
 // WARN: incomplete
-void binary_integer();
+void binary_decimal();
 
-// TODO: documentation
-void shift_l();
+/**
+ * @brief Shifts bits in input n amount of spaces left.
+ * @param in_b Input array of bits to be shifted.
+ * @param size_in_b Length of input array, n.
+ * @param out_b Output array of binary digits.
+ * @param size_out_b Length of output array.
+ * @param shift_amount n-number of spaces bits are shifted to the left.
+ */
+void shift_l(int* in_b, int size_in_b, int* out_b, int size_out_b, int shift_amount);
 
 // WARN: incomplete
 void shift_r();
 
 // WARN: incomplete
 void inverse();
+
+
 
 #endif // BIT_MANIPULATION_H
