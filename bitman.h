@@ -31,7 +31,7 @@ void bin_dec();
  * @param shift_amount n-number of spaces bits are shifted to the left.
  * @return 0 upon success, -1 upon size correlation failure, 1 upon failure.
  */
-int bin_shift_l(int* in_b, int size_in_b, int* out_b, int size_out_b, int shift_amount);
+int shift_l(int* in_b, int size_in_b, int* out_b, int size_out_b, int shift_amount);
 
 /**
  * @breif Shifts bits in input n amount of spaces right.
@@ -42,10 +42,17 @@ int bin_shift_l(int* in_b, int size_in_b, int* out_b, int size_out_b, int shift_
  * @param shift_amount n-number of spaces bits are shifted to the right.
  * @return 0 upon success, -1 upon size correlation failure, 1 upon failure.
  */
-int bin_shift_r(int* in_b, int size_in_b, int* out_b, int size_out_b, int shift_amount);
+int shift_r(int* in_b, int size_in_b, int* out_b, int size_out_b, int shift_amount);
 
-// WARN: incomplete
-void inverse();
+/**
+ * @breif Flips all the bits in input array.
+ * @param in_b Input array of bits to be flipped.
+ * @param size_in_b Length of input array.
+ * @param out_b Output array of flipped bits.
+ * @param size_out_b Length of output array.
+ * @return 0 upon success, -1 upon size correlation failure, 1 upon failure.
+ */
+int inverse(int* in_b, int size_in_b, int* out_b, int size_out_b);
 
 // MATH
 

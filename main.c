@@ -1,3 +1,5 @@
+// INFO: TESTING; TEMPORARY FILE
+
 #include "bitman.h"
 #include <stdio.h>
 
@@ -6,10 +8,10 @@
 int main()
 {
     int in[BITCOUNT] = {0, 0, 0, 0, 0, 1, 0, 0};
-    int mod[BITCOUNT] = {0, 0, 0, 0, 0, 0, 1, 0};
+    // int mod[BITCOUNT] = {0, 0, 0, 0, 0, 0, 1, 0};
     int out[BITCOUNT];
 
-    int res = bin_subtract(in, BITCOUNT, out, BITCOUNT, mod);
+    int res = shift_l(in, BITCOUNT, out, BITCOUNT, 5);
 
     switch (res)
     {
@@ -23,10 +25,10 @@ int main()
     }
     printf("\n");
 
-    for (int i = 0; i < BITCOUNT; i++) {
-        printf("%d", mod[i]);
-    }
-    printf("\n");
+    // for (int i = 0; i < BITCOUNT; i++) {
+    //     printf("%d", mod[i]);
+    // }
+    // printf("\n");
 
 
     for (int i = 0; i < BITCOUNT; i++) {
