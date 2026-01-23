@@ -9,16 +9,16 @@
  * @param size_out_b Length of output array.
  * @param dec Decimal number being translated to binary.
  */
-void decimal_binary(int* out_b, int size_out_b, int dec);
+void dec_bin(int* out_b, int size_out_b, int dec);
 
 // WARN: incomplete
-void binary_hexadecimal();
+void bin_hex();
 
 // WARN: incomplete
-void hexadecimal_binary();
+void hex_bin();
 
 // WARN: incomplete
-void binary_decimal();
+void bin_dec();
 
 // BITWISE
 
@@ -29,8 +29,9 @@ void binary_decimal();
  * @param out_b Output array of binary digits.
  * @param size_out_b Length of output array.
  * @param shift_amount n-number of spaces bits are shifted to the left.
+ * @return 0 upon success, -1 upon size correlation failure, 1 upon failure.
  */
-void shift_l(int* in_b, int size_in_b, int* out_b, int size_out_b, int shift_amount);
+int bin_shift_l(int* in_b, int size_in_b, int* out_b, int size_out_b, int shift_amount);
 
 /**
  * @breif Shifts bits in input n amount of spaces right.
@@ -39,8 +40,9 @@ void shift_l(int* in_b, int size_in_b, int* out_b, int size_out_b, int shift_amo
  * @param out_b Output array of bits.
  * @param size_out_b Length of output array.
  * @param shift_amount n-number of spaces bits are shifted to the right.
+ * @return 0 upon success, -1 upon size correlation failure, 1 upon failure.
  */
-void shift_r(int* in_b, int size_in_b, int* out_b, int size_out_b, int shift_amount);
+int bin_shift_r(int* in_b, int size_in_b, int* out_b, int size_out_b, int shift_amount);
 
 // WARN: incomplete
 void inverse();
@@ -54,7 +56,20 @@ void inverse();
  * @param out_b Output array of bits.
  * @param size_out_b Length of output array.
  * @param add_bin Array of bits of a binary number to be added to input.
+ * @return 0 upon success, -1 upon size correlation failure, 1 upon failure.
  */
-void binary_add(int* in_b, int size_in_b, int* out_b, int size_out_b, int* add_bin);
+int bin_add(int* in_b, int size_in_b, int* out_b, int size_out_b, int* add_bin);
+
+// WARN: incomplete
+/**
+ * @brief Subtracts binary array in_b by binary array sub_bin; out_b = in_b - sub_bin
+ * @param in_b Input array of bits.
+ * @param size_in_b Length of input array.
+ * @param out_b Output array of bits.
+ * @param size_out_b Length of output array.
+ * @param sub_bin Array of bits in_b is being subtracted by.
+ * @return 0 upon success, -1 upon size correlation failure, 1 upon failure.
+ */
+int bin_subtract(int* in_b, int size_in_b, int* out_b, int size_out_b, int* sub_bin);
 
 #endif // BITMAN_H

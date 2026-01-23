@@ -8,3 +8,5 @@ A simple bit manipulation library to learn how to do computation with bits. Does
 # Features
 - Translate from decimal to binary
 - Bit shifting
+# Return Values
+Functions return 0 upon success. Functions return -1 upon input/output size correlation failure. Functions return 1 upon error.
